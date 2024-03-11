@@ -1,0 +1,46 @@
+{
+  "name": "3d-solar-threejs",
+  "version": "0.1.0",
+  "description": "threejs 3D楼栋太阳光照模拟",
+  "author": "Rain",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@vant/touch-emulator": "^1.4.0",
+    "core-js": "^3.8.3",
+    "dayjs": "^1.11.10",
+    "stats.js": "^0.17.0",
+    "three": "^0.158.0",
+    "tween.js": "^16.6.0",
+    "vant": "^4.7.3",
+    "vue": "^3.2.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@vant/auto-import-resolver": "^1.0.2",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "less": "^4.2.0",
+    "less-loader": "^11.1.3",
+    "prettier": "^3.0.3",
+    "unplugin-vue-components": "^0.25.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "keywords": [
+    "threejs",
+    "日照",
+    "太阳光",
+    "日照时长",
+    "sun"
+  ]
+}
