@@ -12,12 +12,12 @@ export class basicThree {
     this.modelUrl // 模型URL
 
     // three 3要素
-    this.renderer //渲染器
-    this.camera //摄像头
-    this.scene //场景
+    this.renderer // 渲染器
+    this.camera // 相机
+    this.scene // 场景
 
     //光源
-    this.ambientLight //环境光
+    this.ambientLight // 环境光
     this.sunLight // 太阳光
 
     //摄像头控制
@@ -35,7 +35,7 @@ export class basicThree {
     this.initCamera()
     this.initRender()
 
-    this.orbitHelper() //摄像头辅助
+    this.orbitHelper()
     this.statsHelper() //性能辅助
     this.animate()
 
