@@ -17,7 +17,6 @@ export const useSun = () => {
   const latitude = ref(23.1291)
   const longitude = ref(113.2644)
 
-  const sunOffset = ref(20) // 太阳光角度偏移
   const animationHandle = ref()
   const sunlightPosition = ref()
   const progress = ref(0)
@@ -65,15 +64,11 @@ export const useSun = () => {
       longitude.value,
     )
 
-    // 太阳角度偏移(可选)
-    const offSetRad =
-      sunOffset.value > 0 ? THREE.MathUtils.degToRad(sunOffset.value) : 0
-
     const sunDirection = new THREE.Vector3()
     sunDirection.setFromSphericalCoords(
       1,
       Math.PI / 2 - sunPosition.altitude,
-      -sunPosition.azimuth - offSetRad,
+      -sunPosition.azimuth,
     )
     sunDirection.normalize()
 
